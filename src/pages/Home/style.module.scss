@@ -1,1 +1,14 @@
 @import '@styles/base';
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: $color-background;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}

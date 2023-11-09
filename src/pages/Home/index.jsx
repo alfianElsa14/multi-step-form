@@ -1,10 +1,16 @@
 import { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, connect } from 'react-redux';
 import { FormattedMessage } from 'react-intl';
+import { createStructuredSelector } from 'reselect';
 
 import { ping } from '@containers/App/actions';
+import Card from '@components/Card';
 
-const Home = () => {
+import { selectStep, selectInfo, selectPrice, selectAdd } from './selectors';
+
+import style from './style.module.scss'
+
+const Home = ({step, info, price, add}) => {
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -12,10 +18,17 @@ const Home = () => {
   }, [dispatch]);
 
   return (
-    <div>
-      <FormattedMessage id="app_greeting" />
+    <div className={style.container}>
+      <Card step={step} info={info} price={price} add={add}/>
     </div>
   );
 };
 
-export default Home;
+const mapStateToProps = createStructuredSelector({
+  step: selectStep,
+  info: selectInfo,
+  price: selectPrice,
+  add: selectAdd
+})
+
+export default connect(mapStateToProps)(Home);

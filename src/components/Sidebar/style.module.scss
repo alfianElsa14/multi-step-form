@@ -1,0 +1,52 @@
+@import '@styles/base';
+
+.sidebar {
+    background-image: url('../../assets/images/bg-sidebar-desktop.svg');
+    width: 250px;
+    margin-right: 10px;
+    border-radius: 10px;
+
+    .routes {
+        display: flex;
+        padding: 20px;
+
+        .number {
+            background-color: transparent;
+            width: 35px;
+            height: 35px;
+            display: flex;
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid $color-background;
+            color: $color-background;
+            margin-right: 30px;
+        }
+
+        .numberOn {
+            background-color: rgb(157, 157, 255);
+            width: 35px;
+            height: 35px;
+            display: flex;
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid $color-background;
+            color: $color-background;
+            margin-right: 30px;
+        }
+
+        .step {
+            display: flex;
+            flex-direction: column;
+            height: 35px;
+            color: $color-background;
+            font-weight: 150;
+
+            .stepList {
+                font-weight: 550;
+                font-size: 15px;
+            }
+        }
+    }
+}

@@ -1,0 +1,127 @@
+@import '@styles/base';
+
+.formContent {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 90px;
+
+    .title {
+        font-size: 40px;
+        font-weight: 600;
+        color: $color-black;
+    }
+
+    .message {
+        font-size: 15px;
+        margin-top: 10px;
+        font-weight: 600;
+        color: #C5C4C8;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+
+        .monthly {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #F8F9FE;
+            border-radius: 5px;
+            width: 450px;
+
+
+            .left {
+                font-weight: 700;
+                font-size: 15px;
+                margin-left: 20px;
+                color: $color-black;
+
+                .change {
+                    font-size: 13px;
+                    margin-top: 10px;
+                    font-weight: 500;
+                    font-style: italic;
+                    cursor: pointer;
+                }
+            }
+
+            .right {
+                p {
+                    font-size: 15px;
+                    margin-right: 20px;
+                    color: #C5C4C8;
+                }
+            }
+
+            .leftBawah {
+                color: #C5C4C8;
+                font-weight: 700;
+                font-size: 15px;
+                margin-left: 20px;
+
+                .titleMonth {
+                    margin-bottom: 20px;
+                }
+            }
+
+            .rightBawah {
+                p {
+                    font-size: 15px;
+                    margin-right: 20px;
+                    margin-bottom: 20px;
+                    color: #C5C4C8;
+                }
+            }
+        }
+
+        .total {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 5px;
+            width: 450px;
+
+            .leftTotal {
+                font-weight: 700;
+                font-size: 15px;
+                margin-left: 20px;
+                color: #C5C4C8;
+            }
+
+            .rightTotal {
+                p {
+                    font-size: 18px;
+                    margin-right: 20px;
+                    margin-bottom: 20px;
+                    font-weight: 700;
+                    color: #695dc6;
+                }
+            }
+        }
+
+        .button {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 100px;
+
+            button {
+                height: 40px;
+                width: 100px;
+                background-color: rgb(33, 33, 112);
+                font-size: 13px;
+                border-radius: 5px;
+                color: white;
+                cursor: pointer;
+            }
+
+            .goBack {
+                background-color: white;
+                color: $color-black;
+            }
+        }
+    }
+}

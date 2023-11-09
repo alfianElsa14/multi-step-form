@@ -1,0 +1,112 @@
+@import '@styles/base';
+
+.formContent {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 90px;
+
+    .title {
+        font-size: 40px;
+        font-weight: 600;
+        color: $color-black;
+    }
+
+    .message {
+        font-size: 15px;
+        margin-top: 10px;
+        font-weight: 600;
+        color: #C5C4C8;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+
+        .boxContainer {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            cursor: pointer;
+
+            .box {
+                width: 150px;
+                height: 180px;
+                border: #C5C4C8 solid 4px;
+                border-radius: 5px;
+
+                &:active {
+                    background-color: #d5cee8;
+                }
+
+                &.selected {
+                    background-color: #d5cee8; 
+                }
+
+                .boxItem {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    padding: 10px;
+                    height: 150px;
+
+                    img {
+                        width: 40px;
+                    }
+
+                    .monthly {
+                        font-size: 20px;
+                        font-weight: 700;
+                        color: $color-black;
+                    }
+
+                    .price {
+                        font-size: 15px;
+                        font-weight: 500;
+                        color: #C5C4C8;;
+                    }
+                }
+            }
+
+           
+        }
+
+        .choice {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            background-color: #F8F9FE;
+            height: 50px;
+            border-radius: 5px;
+            color: $color-black;
+
+            .switch {
+                margin-left: 40px;
+                margin-right: 40px;
+            }
+        }
+
+        .button {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 100px;
+
+            button {
+                height: 40px;
+                width: 100px;
+                background-color: rgb(33, 33, 112);
+                font-size: 13px;
+                border-radius: 5px;
+                color: white;
+                cursor: pointer;
+            }
+
+            .goBack {
+                background-color: white;
+                color: $color-black;
+            }
+        }
+    }
+
+}

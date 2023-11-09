@@ -1,0 +1,21 @@
+@import '@styles/base';
+
+.cardContainer {
+    background-color: white;
+    width: 950px;
+    height: 550px;
+    border-radius: 10px;
+    display: flex;
+
+    .content {
+        display: flex;
+        padding: 10px 10px;
+
+       
+
+        .formContainer {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
